@@ -181,7 +181,7 @@ fun main() {
  */
 fun placeMonkey(cageList: MutableList<String>, name: String): Int {
     println("+++ Putting $name into a cage")
-
+    cageList.add(name)
     // YOUR CODE HERE
     return -1
 }
