@@ -246,24 +246,20 @@ fun placeMonkeyInCage(cageList: MutableList<String>, cageNum: Int, name: String)
 /**
  * Show all cages from the given list, formatted as a horizontal table:
  *
- * +--------+--------+--------+--------+----
- * | Cage 1 | Cage 2 | Cage 3 | Cage 4 | Etc.    val divider = "+--------".repeat(cageList.size) + "+"
- *
- *     println(divider)
- *     for (i in 0..<cageList.size) print("| Cage ${i + 1} ")
- *     println("|")
- *
- *     println(divider)
- *     for ((i, name) in cageList.withIndex()) print("| ${name.padEnd(6)} ")
- *     println("|")
- *
- *     println(divider)
+
  * +--------+--------+--------+--------+----
  * | Kevin  | ---    | Samson | Pam    | Etc.
  * +--------+--------+--------+--------+----
  */
 fun showMonkeyCages(cageList: List<String>) {
-
+    val divider = "+--------".repeat(cageList.size) + "+"
+    println(divider)
+    for (i in 0..<cageList.size) print("| Cage ${i + 1} ")
+    println("|")
+    println(divider)
+    for ((i, name) in cageList.withIndex()) print("| ${name.padEnd(6)} ")
+    println("|")
+         println(divider)
 }
 
 
